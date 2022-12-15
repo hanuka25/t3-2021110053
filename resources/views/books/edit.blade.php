@@ -55,7 +55,7 @@
                 <div>
                     <select id="author_id" name="author_id" class="form-control">
                         @foreach ($authors as $author)
-                            <option value="{{ old('id') ?? $author->id }}">{{ $author->nama }}</option>
+                            <option value="{{ old('id') ?? $author->id }}"selected>{{ $author->nama }}</option>
                         @endforeach
                     </select>
                     @error('author')
